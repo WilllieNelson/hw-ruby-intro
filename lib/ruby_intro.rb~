@@ -51,25 +51,5 @@ end
 # Part 3
 
 class BookInStock
-attr_reader   :isbn
-  attr_accessor :price
-
-  def isbn=(isbn)
-    @isbn = isbn
-  end
-
-  def price=(price)
-    @price = price
-  end
-
-  def initialize(isbn, price)
-    raise ArgumentError unless isbn.length > 0 && price > 0
-    @isbn = isbn
-    @price = Float(price)
-    raise ArgumentError.new if price <= 0
-  end
-
-  def price_as_string
-    return sprintf("$%2.2f", price)
-  end
+# YOUR CODE HERE
 end
